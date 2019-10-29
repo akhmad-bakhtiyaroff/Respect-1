@@ -1,10 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,600i,700,700i,800,800i,900,900i&display=swap');
 
 body {
   background-color: #121212;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+}
+
+#center {
+  display: block;
+  margin: 0 auto;
 }
 
 .home {
@@ -16,6 +22,37 @@ body {
   background-position: center center;
 }
 
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1391px;
+  }
+}
 
 /* ====================================
 Navigation 
@@ -72,7 +109,7 @@ nav li a {
   top: 46%;
   color: #fff;
   text-transform: uppercase;
-  font-family: 'Work sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   letter-spacing: 4px;
   text-decoration: none;
@@ -115,7 +152,7 @@ nav li a:after {
   right: 0;
   bottom: -50px;
   text-transform: none;
-  font-family: 'Open sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-style: italic;
   letter-spacing: 0;
@@ -136,23 +173,23 @@ nav li a:hover:after {
 }
 
 nav li:nth-of-type(1) {
-  background-color: #0E0E0E
+  background-color: #121212
 }
 
 nav li:nth-of-type(2) {
-  background-color: #222222
+  background-color: #3A3A3A
 }
 
 nav li:nth-of-type(3) {
-  background-color: #282828
+  background-color: #666666
 }
 
 nav li:nth-of-type(4) {
-  background-color: #323232;
+  background-color: #969696;
 }
 
 nav li:nth-of-type(5) {
-  background-color: #3B3B3B;
+  background-color: #C9C9C9;
 }
 
 
@@ -162,7 +199,7 @@ Burger king
 
 .open-overlay {
   position: absolute;
-  right: 5rem;
+  right: 10rem;
   top: 3.2rem;
   z-index: 100;
   width: 34px;
@@ -317,17 +354,16 @@ Animation keyframes
   }
 }
 
-.home a {
-  font-family: "Work Sans", sans-serif;
-  color: #222;
+.brand a {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 18px;
   text-transform: uppercase;
   text-decoration: none;
   position: absolute;
   z-index: 10;
   top: 50px;
-  left: 50px;
   padding-bottom: 3px;
   border-bottom: 1px solid #222;
 }
@@ -359,4 +395,45 @@ Animation keyframes
   nav li a:before {
     width: 25px;
   }
+}
+
+.bg-text {
+  position: absolute;
+  left: 20px;
+  margin-top: -80px;
+}
+
+.bg-text .title {
+  line-height: 1;
+  font-family: Montserrat;
+  font-size: 322px;
+  font-weight: 900;
+  color: rgba(195, 195, 195, 0.04);
+  text-transform: uppercase;
+}
+
+.pg-name {
+  top: 35%;
+  position: fixed;
+}
+
+.pg-name .pg-title {
+  padding: 0;
+  margin: 0;
+  font-size: 86px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.pg-name .desc {
+  padding-top: -50px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.pg-title {
+  text-transform: uppercase;
+  font-size: 86px;
+  font-weight: 900;
 }
