@@ -27,6 +27,18 @@ body  {
   margin-left: auto;
 }
 
+.container-img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: 100vh;
+  padding-right: 15px;
+  padding-left: 15px;
+  
+  
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
