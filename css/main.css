@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,600i,700,700i,800,800i,900,900i&display=swap');
 
-body {
+body  {
   background-color: #121212;
   margin: 0;
   padding: 0;
@@ -8,23 +8,13 @@ body {
   overflow: hidden;
 }
 
-.circle-big {
-  width: 1200px;
-  height: 1200px;
-  background-color: #131313;
-  -webkit-box-shadow: 0px 0px 41px -13px rgba(0,0,0,0.74);
-  -moz-box-shadow: 0px 0px 41px -13px rgba(0,0,0,0.74);
-  box-shadow: 0px 0px 41px -13px rgba(0,0,0,0.74);
-  border-radius: 50%;
-  display: block;
-  margin: -5% auto;
-}
 
 .home {
   width: 100%;
   height: 100vh;
   position: relative;
-  
+  background-image: url(../img/shapes/bg.png);
+  background-color: #1A1A1A;
   background-size: cover;
   background-position: center center;
 }
